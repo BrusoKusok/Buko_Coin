@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Web App</title>
+    <title>Buka Coin Clicker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Clicker Game</h1>
-        <button id="clickButton">Click me!</button>
-        <p id="clickCount">0</p>
+        <div class="header">
+            <h1>Buka Coin</h1>
+        </div>
+        <div class="content">
+            <div class="stats">
+                <div class="stat">
+                    <p>Прибыль за клик</p>
+                    <span id="profit-per-click">+2</span>
+                </div>
+                <div class="stat">
+                    <p>След уровень</p>
+                    <span id="next-level">25к</span>
+                </div>
+                <div class="stat">
+                    <p>Прибыль в час</p>
+                    <span id="profit-per-hour">0</span>
+                </div>
+            </div>
+            <div class="circle" id="click-circle"></div>
+            <div class="level">
+                <p>Level <span id="level">1</span>/10</p>
+                <p>Silver ></p>
+            </div>
+        </div>
+        <div class="footer">
+            <button>Exchange</button>
+            <button>Airdrop</button>
+            <button>Earn</button>
+            <button>Referral</button>
+            <button>Boost</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
